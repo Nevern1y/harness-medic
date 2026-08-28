@@ -105,12 +105,14 @@ async function probeOnce(server: McpServer, context: ScanContext, timeoutMs: num
   } catch (error) {
     probeError = Object.assign(error instanceof Error ? error : new Error(String(error)), { probePhase: phase });
   } finally {
+    // Start tree cleanup before the SDK can kill the parent and orphan descendants.
+    const processCleanup = childPid === undefined ? undefined : terminateProcessTree(childPid);
     try {
       await client.close();
     } catch {
       cleanupStatus = 'failed';
     }
-    if (childPid !== undefined && !(await terminateProcessTree(childPid))) cleanupStatus = 'failed';
+    if (processCleanup && !(await processCleanup)) cleanupStatus = 'failed';
     if (probeError) probeError.cleanupStatus = cleanupStatus;
   }
   if (probeError) throw probeError;

@@ -1,0 +1,24 @@
+name: Compatibility fixture
+description: Propose a sanitized harness format or regression fixture
+title: "fixture: "
+body:
+  - type: input
+    id: harness
+    attributes:
+      label: Harness and version
+    validations:
+      required: true
+  - type: textarea
+    id: case
+    attributes:
+      label: Case
+      description: Describe the source scope, precedence, expected normalized state, and expected-negative case.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: The fixture uses synthetic values only.
+          required: true

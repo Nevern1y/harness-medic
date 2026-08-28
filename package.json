@@ -1,0 +1,103 @@
+{
+  "name": "harness-medic",
+  "version": "0.1.0",
+  "description": "Local-first diagnostics for Claude Code, Codex, OpenCode, and Cursor configuration, MCP servers, hooks, and context overhead",
+  "keywords": [
+    "coding-agents",
+    "developer-tools",
+    "developer-experience",
+    "claude-code",
+    "openai-codex",
+    "opencode",
+    "cursor",
+    "mcp",
+    "security",
+    "static-analysis",
+    "configuration",
+    "typescript",
+    "cli",
+    "privacy"
+  ],
+  "type": "module",
+  "bin": {
+    "harness-medic": "dist/cli/index.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./model": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./scan": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./schema": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "docs/compatibility.md",
+    "docs/privacy.md",
+    "docs/threat-model.md",
+    "docs/contributing-fixtures.md",
+    "docs/publishing.md",
+    "docs/rule-reference",
+    "examples/reports",
+    "schemas",
+    "assets",
+    "README.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:fixtures": "vitest run tests/integration/adapters.test.ts tests/integration/mcp-probe.test.ts tests/unit",
+    "test:integration": "vitest run tests/integration tests/smoke",
+    "test:security": "tsx scripts/security-check.ts",
+    "pack:check": "tsx scripts/pack-check.ts",
+    "corpus:report": "tsx scripts/corpus-report.ts",
+    "benchmark:scan": "tsx scripts/benchmark-scan.ts",
+    "release:validate": "tsx scripts/release-validate.ts",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "commander": "^15.0.0",
+    "fast-glob": "^3.3.3",
+    "ignore": "^7.0.5",
+    "js-tiktoken": "^1.0.21",
+    "jsonc-parser": "^3.3.1",
+    "picocolors": "^1.1.1",
+    "smol-toml": "^1.8.0",
+    "yaml": "^2.8.1",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^10.0.0",
+    "tsdown": "^0.22.14",
+    "tsx": "^4.20.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.11"
+  }
+}

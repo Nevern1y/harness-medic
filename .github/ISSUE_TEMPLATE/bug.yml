@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible Harness Medic failure
+title: "bug: "
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the command, sanitized fixture shape, and observed output.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Node version, package version, and harness version.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed credentials, environment values, and private configuration.
+          required: true

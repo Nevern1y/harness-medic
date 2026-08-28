@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" role="img" aria-labelledby="title description">
+  <title id="title">How Harness Medic turns configuration into evidence</title>
+  <desc id="description">A four-step horizontal process: discover sources, resolve precedence, diagnose with evidence, and repair through a reviewed plan.</desc>
+  <rect width="1600" height="720" fill="#f7f7f5"/>
+  <rect x="88" y="76" width="22" height="22" fill="#c63d35"/>
+  <text x="138" y="96" fill="#111518" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="1.4">HARNESS MEDIC</text>
+  <text x="1512" y="96" text-anchor="end" fill="#69727a" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="1">LOCAL-FIRST DIAGNOSTICS</text>
+  <line x1="88" y1="130" x2="1512" y2="130" stroke="#cfd3d1"/>
+
+  <text x="88" y="220" fill="#111518" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="-1.4">From scattered files to a defensible report.</text>
+  <text x="88" y="263" fill="#69727a" font-family="Arial, Helvetica, sans-serif" font-size="23">Discovery, evidence, diagnosis, and repair stay separate.</text>
+
+  <line x1="120" y1="378" x2="1480" y2="378" stroke="#111518" stroke-width="2"/>
+  <polygon points="470,370 484,378 470,386" fill="#111518"/>
+  <polygon points="810,370 824,378 810,386" fill="#111518"/>
+  <polygon points="1150,370 1164,378 1150,386" fill="#111518"/>
+
+  <text x="88" y="338" fill="#c63d35" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">01</text>
+  <text x="88" y="431" fill="#111518" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Discover</text>
+  <text x="88" y="468" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">Find workspace and harness</text>
+  <text x="88" y="497" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">sources without executing them.</text>
+
+  <text x="508" y="338" fill="#c63d35" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">02</text>
+  <text x="508" y="431" fill="#111518" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Resolve</text>
+  <text x="508" y="468" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">Model scope, precedence,</text>
+  <text x="508" y="497" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">shadowing, and gaps.</text>
+
+  <text x="848" y="338" fill="#c63d35" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">03</text>
+  <text x="848" y="431" fill="#111518" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Diagnose</text>
+  <text x="848" y="468" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">Separate static facts, runtime</text>
+  <text x="848" y="497" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">events, and heuristics.</text>
+
+  <text x="1188" y="338" fill="#c63d35" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">04</text>
+  <text x="1188" y="431" fill="#111518" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Repair</text>
+  <text x="1188" y="468" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">Preview hash-guarded changes,</text>
+  <text x="1188" y="497" fill="#40494f" font-family="Arial, Helvetica, sans-serif" font-size="19">then apply or roll back.</text>
+
+  <line x1="88" y1="594" x2="1512" y2="594" stroke="#cfd3d1"/>
+  <text x="88" y="638" fill="#69727a" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="0.7">EVIDENCE</text>
+  <text x="258" y="638" fill="#111518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">static</text>
+  <text x="432" y="638" fill="#111518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">runtime</text>
+  <text x="624" y="638" fill="#111518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">behavioral</text>
+  <text x="842" y="638" fill="#111518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">heuristic</text>
+  <text x="1512" y="638" text-anchor="end" fill="#c63d35" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="0.7">NO EXECUTION BY DEFAULT</text>
+</svg>

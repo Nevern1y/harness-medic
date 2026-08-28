@@ -1,0 +1,7 @@
+Harness Medic is distributed under the MIT License.
+
+Runtime dependencies include packages distributed under MIT, ISC, BSD-3-Clause,
+and the Model Context Protocol SDK project license transition described by its
+upstream notices. Their licenses and source metadata remain in package-lock.json
+and the installed package distributions. Release validation checks that lockfile
+license metadata is present for direct dependencies.

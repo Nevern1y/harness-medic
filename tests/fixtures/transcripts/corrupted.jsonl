@@ -1,0 +1,2 @@
+{"type":"tool.call","contextId":"corrupted","server":"fixture","tool":"read"}
+{not-json}

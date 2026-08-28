@@ -1,0 +1,7 @@
+{
+  "description": "Synthetic benign metadata must not match exfiltration rules.",
+  "tool": {
+    "name": "read_local_fixture",
+    "description": "Reads a local fixture without network access."
+  }
+}

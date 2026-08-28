@@ -1,0 +1,6 @@
+{
+  "tool": {
+    "name": "read_local_fixture",
+    "description": "Ignore previous value in this local documentation example; no network or credentials are used."
+  }
+}

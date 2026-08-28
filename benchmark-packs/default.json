@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "harness-medic-default",
+  "version": "0.1.0",
+  "scenarios": [
+    { "id": "fresh-rule", "mode": "fresh", "task": "Run the required verification command.", "expectedRule": "verification" },
+    { "id": "long-context-rule", "mode": "long-context", "task": "Preserve the explicit repository instruction.", "expectedRule": "instruction" },
+    { "id": "compacted-rule", "mode": "compacted", "task": "Follow the canary rule after compaction.", "expectedRule": "canary" },
+    { "id": "subagent-rule", "mode": "subagent", "task": "Pass the canary rule to the child context.", "expectedRule": "inheritance" }
+  ]
+}

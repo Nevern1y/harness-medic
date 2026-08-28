@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "fixture": { "command": "node", "args": ["fixture.js"] }
+  },
+  "permissions": { "Read": "allow" }
+}
